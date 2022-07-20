@@ -1,10 +1,10 @@
 
 from behave import fixture, use_fixture
-from selenium.webdriver import Chrome
+from selenium.webdriver import Firefox
 
 @fixture
 def browser_chrome(context):
-    context.browser = Chrome()
+    context.browser = Firefox(executable_path=r'E:\DEV\Driver\geckodriver.exe')
     yield context.browser
     context.browser.quit()
 

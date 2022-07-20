@@ -35,6 +35,7 @@ def visualiza_tela(context):
             print(f'{count + 1}: {linha}')
     assert context.retorna_lista is not None
 
+
 @given('que estou usando request')
 def requisition_request(context):
     context.res = requests.get('https://api.github.com/users/lkalves/repos')

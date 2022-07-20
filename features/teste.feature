@@ -5,10 +5,10 @@ Feature: Google e Github test
     When pesquiso por github
     Then então devo visualizar os 5 primeiros resultados da pesquisa
 
-#  Scenario: Request no Github
-#    Given que estou usando request
-#    When devo pegar todos repositorios de LKALVES
-#    Then então devo apresentar os 5 primeiros resultados
+  Scenario: Request no Github
+    Given que estou usando request
+    When devo pegar todos repositorios de LKALVES
+    Then então devo apresentar os 5 primeiros resultados
 
 
 #  Entender como funciona o context

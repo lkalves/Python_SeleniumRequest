@@ -10,11 +10,11 @@ class GoogleElements:
         self.driver = browser
 
     def elementos_pagina(self):
-        self.campoPesquisa = self.driver.find_element_by_xpath('//*[@title="Pesquisar"]')
+        self.campoPesquisa = self.driver.find_element(By.XPATH, '//*[@title="Pesquisar"]')
 
     def pesquisa_google(self):
         lst = []
-        self.resultadoPesquisa = self.driver.find_elements_by_xpath('//*[@id="rso"]//*/div[1]/a')
+        self.resultadoPesquisa = self.driver.find_elements(By.XPATH, '//*[@id="rso"]//*/div[1]/a')
 
         for link in self.resultadoPesquisa:
             try:
